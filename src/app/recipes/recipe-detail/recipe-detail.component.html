@@ -1,0 +1,68 @@
+<div class="row">
+  <img class="rounded mx-auto d-block" style="max-width:100%; max-height:500px; margin-bottom:10px"
+    src="{{recipe.imagePath}}">
+  <p></p>
+  <div class="btn-group" role="group" aria-label="Basic example">
+      <a (click)="onAddToShoppingList()"><button type="button" class="btn btn-primary btn-sm">Small button</button></a>
+      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+  </div>
+  <br>
+  <hr>
+  <table class="table table-active table-bordered">
+    <thead>
+      <tr class="table-info">
+        <th scope="col">Name</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let recipeElement of recipe.ingredients">
+        <th scope="col">{{recipeElement.name }}</th>
+        <th scope="col">{{recipeElement.amount }}</th>
+      </tr>
+    <tbody>
+
+  </table>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-12">
+    <img src="" alt="" class="imag-float">
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h1>Recipe name</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage Recipe<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">To shoping list</a></li>
+        <li><a href="#">Edit recipe</a></li>
+        <li><a href="#">Delete recipe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    Description
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    {{recipe.name}}
+  </div>
+</div> -->
